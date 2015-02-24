@@ -39,7 +39,7 @@ Hint:
 var ProjContainer = project.GetProjectItemContainer<IProjectItemContainer>("Project Container Name");
 ```
 * Compile the add-in to test the List of Project Items button. You should get something like this:  
-![list-of-project-items.png](https://github.com/UmaHarano/my-test-repo/images/Lab2/list-of-project-items.png)
+![list-of-project-items.png](https://github.com/UmaHarano/my-test-repo/tree/master/images/Lab2/list-of-project-items.png)
 
 
 ####Step 2: Listen to Project Item changed events  
