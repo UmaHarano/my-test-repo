@@ -353,6 +353,6 @@ Click the Toggle State button in the Navigate group of the Map tab.  This will e
 
 * Compile the Add-In and run the sample. As you click the Toggle State button notice how the tab group is displayed and hidden in conjunction with the condition being enabled and disabled via the underlying state.
 
-![fav.png](../../../../../../wiki/images/Lab1/state-disabled.png "Example State is disabled")  
+![fav.png]((http://umaharano.github.io/my-test-repo/images/Lab1/state-disabled.png "Example State is disabled")  
 
-![tab-groups.png](../../../../../../wiki/images/Lab1/state-enabled.png "Example State is enabled")  
+![tab-groups.png]((http://umaharano.github.io/my-test-repo/images/Lab1/state-enabled.png "Example State is enabled")  
