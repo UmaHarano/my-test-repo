@@ -33,7 +33,7 @@
 * In the Add New Item dialog navigate to 'Visual C# Items' | 'ArcGIS' | 'ArcGIS Pro Add-ins' and select 'ArcGIS Pro Dockpane.  Rename the default name 'Dockpane1.xaml' to 'BookmarkDockpane.xaml'  
 * Build the Solution and debug the newly Added dockpane.  You should see a dockpane that looks like this:  
 
-![ShowDockpane](images/ShowDockpane.png)
+![ShowDockpane](http://umaharano.github.io/my-test-repo/images/ShowDockpane.png)
   
 * Explore some of you dockpane's built-in features such as docking  
 * Close ArcGIS Pro to stop the debugger  
