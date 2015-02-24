@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArcGIS defaultAssembly="GeometryExercisesSolution.dll" defaultNamespace="GeometryExercisesSolution" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///D:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{ad9c111d-4c23-42bf-a1b7-b3b51832a0f6}" version="1.0" desktopVersion="1.1.2877">
+    <Name>GeometryExercisesSolution</Name>
+    <Description>GeometryExercises description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>ArcGIS Pro SDK</Author>
+    <Company>Esri</Company>
+    <Date>2/16/2015 11:21:52 AM, 2015</Date>
+    <Subject>Geometry, Geodatabase</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="GeometryExercisesSolution_Module" className="GeometryExercisesSolutionModule" autoLoad="false" caption="Module for the Geometry and Data API Solution">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <!--<tab id="GeometryExercises_Tab1" caption="New Tab">
+          <group refID="GeometryExercises_Group1"/>
+        </tab>-->
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="GeometryExercisesSolution_Group1" caption="Geometry/Data Lab (Solution)" appearsOnAddInTab="true">
+          <!-- host controls within groups -->
+          <button refID="GeometryExercisesSolution_createPoints" size="large" />
+          <button refID="GeometryExercisesSolution_createMultiPoints" size="large" />
+          <button refID="GeometryExercisesSolution_createPolylines" size="large" />
+          <button refID="GeometryExercisesSolution_createPolygons" size="large" />
+          <tool refID="GeometryExercisesSolution_DistanceTool" size="large" />
+          <button refID="GeometryExercisesSolution_DistancePane_ShowButton" size="large" />
+          <button refID="GeometryExercisesSolution_Button1" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="GeometryExercisesSolution_createPoints" caption="createPoints " extendedCaption="createPoints (Solution)" className="GeometryExercisesSolution.createPoints" loadOnClick="true" smallImage="Images\GenericButtonBlue16.png" largeImage="Images\GenericButtonBlue32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="DevSummit 2015">Create random sample points.<disabledText /></tooltip>
+        </button>
+        <button id="GeometryExercisesSolution_createMultiPoints" caption="createMultiPoints " extendedCaption="createMultiPoints (Solution)" className="GeometryExercisesSolution.createMultiPoints" loadOnClick="true" smallImage="Images\GenericButtonBlue16.png" largeImage="Images\GenericButtonBlue32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="DevSummit 2015">Create a random multi point.<disabledText /></tooltip>
+        </button>
+        <button id="GeometryExercisesSolution_createPolylines" caption="createPolylines " extendedCaption="createPolylines (Solution)" className="GeometryExercisesSolution.createPolylines" loadOnClick="true" smallImage="Images\GenericButtonBlue16.png" largeImage="Images\GenericButtonBlue32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="DevSummit 2015">Create polylines from the first 20 points of the point feature layer.<disabledText /></tooltip>
+        </button>
+        <button id="GeometryExercisesSolution_createPolygons" caption="createPolygons " extendedCaption="createPolygons (Solution)" className="GeometryExercisesSolution.createPolygons" loadOnClick="true" smallImage="Images\GenericButtonBlue16.png" largeImage="Images\GenericButtonBlue32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="DevSummit 2015">Create a polygon from the multipoint feature.<disabledText /></tooltip>
+        </button>
+        <tool id="GeometryExercisesSolution_DistanceTool" caption="DistanceTool " extendedCaption="Distance Tool (Solution)" className="GeometryExercisesSolution.DistanceTool" loadOnClick="true" smallImage="Images\GenericButtonRed16.png" largeImage="Images\GenericButtonRed32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="DevSummit 2015">Tooltip text<disabledText /></tooltip>
+        </tool>
+        <button id="GeometryExercisesSolution_DistancePane_ShowButton" caption="Show DistancePane " extendedCaption="Show Distance Pane (Solution)" className="GeometryExercisesSolution.DistancePane_ShowButton" loadOnClick="true" smallImage="Images\GenericButtonPurple16.png" largeImage="Images\GenericButtonPurple32.png">
+          <tooltip heading="DevSummit 2015">Show Dockpane<disabledText /></tooltip>
+        </button>
+      </controls>
+      <dockPanes>
+        <dockPane id="GeometryExercisesSolution_DistancePane" caption="DistancePane " className="GeometryExercisesSolution.DistancePaneViewModel" keytip="DockPane" initiallyVisible="true" dock="group" dockWith="esri_core_contentsDockPane">
+          <content className="GeometryExercisesSolution.DistancePaneView" />
+        </dockPane>
+      </dockPanes>
+    </insertModule>
+  </modules>
+</ArcGIS>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArcGIS defaultAssembly="GeometryExcercises.dll" defaultNamespace="GeometryExcercises" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///D:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{67fb21d8-32fb-4f54-aae3-cb222fbf0141}" version="1.0" desktopVersion="1.1.2868">
+    <Name>GeometryExcercises</Name>
+    <Description>GeometryExcercises description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>ArcGIS Pro SDK</Author>
+    <Company>Esri</Company>
+    <Date>2/16/2015 11:15:33 AM, 2015</Date>
+    <Subject>Geometry, Geodatabase</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="GeometryExcercises_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <!--<tab id="GeometryExcercises_Tab1" caption="New Tab">
+          <group refID="GeometryExcercises_Group1"/>
+        </tab>-->
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="GeometryExcercises_Group1" caption="Geometry/Data Lab" appearsOnAddInTab="true">
+          <!-- host controls within groups -->
+          <button refID="GeometryExcercises_createPoints" size="large" />
+          <button refID="GeometryExcercises_createPoints" size="large" />
+          <button refID="GeometryExcercises_createMultiPoints" size="large" />
+          <button refID="GeometryExcercises_createPolylines" size="large" />
+          <button refID="GeometryExcercises_createPolygons" size="large" />
+          <button refID="GeometryExcercises_handleGeometryParts" size="large" />
+          <tool refID="GeometryExcercises_DistanceTool" size="large" />
+          <button refID="GeometryExcercises_DistancePane_ShowButton" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="GeometryExcercises_createPoints" caption="createPoints " className="createPoints" loadOnClick="true" smallImage="Images\GenericButtonBlue16.png" largeImage="Images\GenericButtonBlue32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>
+        <button id="GeometryExcercises_createMultiPoints" caption="createMultiPoints " className="createMultiPoints" loadOnClick="true" smallImage="Images\GenericButtonBlue16.png" largeImage="Images\GenericButtonBlue32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>
+        <button id="GeometryExcercises_createPolylines" caption="createPolylines " className="createPolylines" loadOnClick="true" smallImage="Images\GenericButtonBlue16.png" largeImage="Images\GenericButtonBlue32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>
+        <button id="GeometryExcercises_createPolygons" caption="createPolygons " className="createPolygons" loadOnClick="true" smallImage="Images\GenericButtonBlue16.png" largeImage="Images\GenericButtonBlue32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>
+        <button id="GeometryExcercises_handleGeometryParts" caption="handleGeometryParts " className="handleGeometryParts" loadOnClick="true" smallImage="Images\GenericButtonBlue16.png" largeImage="Images\GenericButtonBlue32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>
+        <tool id="GeometryExcercises_DistanceTool" caption="DistanceTool " className="DistanceTool" loadOnClick="true" smallImage="Images\GenericButtonRed16.png" largeImage="Images\GenericButtonRed32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </tool>
+        <button id="GeometryExcercises_DistancePane_ShowButton" caption="Show DistancePane " className="DistancePane_ShowButton" loadOnClick="true" smallImage="Images\GenericButtonPurple16.png" largeImage="Images\GenericButtonPurple32.png">
+          <tooltip heading="Show Dockpane">Show Dockpane<disabledText /></tooltip>
+        </button>
+      </controls>
+      <dockPanes>
+        <dockPane id="GeometryExcercises_DistancePane" caption="DistancePane " className="DistancePaneViewModel" keytip="DockPane" initiallyVisible="true" dock="group" dockWith="esri_core_contentsDockPane">
+          <content className="DistancePaneView" />
+        </dockPane>
+      </dockPanes>
+    </insertModule>
+  </modules>
+</ArcGIS>
