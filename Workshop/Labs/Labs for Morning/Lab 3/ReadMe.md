@@ -26,7 +26,7 @@
 * Open the start solution called 'MorningLab3Start.sln' using VS 2013
 * Run the project using the VS debugger and validate the Add-in place holder in ArcGIS Pro:
   
-![RunStart](images/RunStartSolution.png)  
+![RunStart](http://umaharano.github.io/my-test-repo/images/RunStartSolution.png)  
 
 * Close ArcGIS Pro to stop the debugger
 * In Solution Explorer right click on the 'MorningLab3Start' project node and click on 'Add' | 'New Item'  
@@ -122,7 +122,7 @@ First we made some simple declarative caption changes in our DAML file.  Then we
 ####Step 3: Add a ListBox to the Dockpane showing the list of maps<br>
 * Next we are adding a listbox to the dockpane that shows all maps, as they are shown in the Pro 'Project pane' below  
   
-![MyBookmarks](images/MapsInPro.png)  
+![MyBookmarks](http://umaharano.github.io/my-test-repo/images/MapsInPro.png)  
  
 * From Solution Explorer open 'BookmarkDockpane.xaml' and add the following XAML snippet after the <Dockpanel>...</DockPanel> section.
   
@@ -205,11 +205,11 @@ public MapProjectItem SelectedMapProjectItem
 
 * Run the project using the VS debugger and verify that the load button loads all maps in ArcGIS Pro:
   
-![MyBookmarks](images/GetMaps.png)  
+![MyBookmarks](http://umaharano.github.io/my-test-repo/images/GetMaps.png)  
 
 * Make a map selection and debug the SelectedMapProjectItem property's set function and make sure that your breakpoint is hit with a map selection change  
 
-![MyBookmarks](images/SelectMapBreakpoint.png)  
+![MyBookmarks](http://umaharano.github.io/my-test-repo/images/SelectMapBreakpoint.png)  
 
 * Close ArcGIS Pro to stop the debugger
 
@@ -220,7 +220,7 @@ The code modifications above dove deeper into MVVM.  We added a button 'Get Maps
 ####Step 4: Add a ListBox to the Dockpane showing bookmarks of a selected map<br>
 * We will add a listbox to the dockpane to show all bookmarks of a selected map. This is how they are shown in the Pro 'Project pane':  
   
-![MyBookmarks](images/AllBookmarks.png)  
+![MyBookmarks](http://umaharano.github.io/my-test-repo/images/AllBookmarks.png)  
  
 * From Solution Explorer open 'BookmarkDockpane.xaml' and add the following XAML snippet after the <Button ...">Get Maps</Button> section. 
   
@@ -264,7 +264,7 @@ public Bookmark SelectedBookmark
 
 * Run the project using the VS debugger and verify the new UI in ArcGIS Pro:
   
-![MyBookmarks](images/UIWithBookmarks.png)  
+![MyBookmarks](http://umaharano.github.io/my-test-repo/images/UIWithBookmarks.png)  
 
 * The List of bookmarks is still empty since we are not loading any bookmarks when the map selection changes.  
 * Close ArcGIS Pro to stop the debugger  
@@ -312,12 +312,12 @@ public MapProjectItem SelectedMapProjectItem
 
 * Run the project using the VS debugger and verify the new map selection function in ArcGIS Pro:  
 
-![MyBookmarks](images/BookmarkListShows.png)  
+![MyBookmarks](http://umaharano.github.io/my-test-repo/images/BookmarkListShows.png)  
 
 * Close ArcGIS Pro to stop the debugger
 * Make a map selection and debug the SelectedMapProjectItem property's set function at the 'ArcGIS...Tasks.QueuingTaskFactory.StartNew' line and step over the the code      
 
-![MyBookmarks](images/DebugMapSelection.png)  
+![MyBookmarks](http://umaharano.github.io/my-test-repo/images/DebugMapSelection.png)  
 
 * Pay close attention to the debugger step sequence  
 * Close ArcGIS Pro to stop the debugger  
