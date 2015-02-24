@@ -26,7 +26,7 @@
 * The ArcGIS Pro Module Add-in Visual Studio project item template will be displayed. Name your module ```working_with_DAML```. Click OK.  
 * Visual Studio will create a new Visual C# or Visual Basic project for you. For the purposes of this document Visual C# will be assumed however the procedure is almost identical for Visual Basic. You will notice the following content in your new project:  
 
-![project-content](../../../../../../wiki/images/Lab1/project-content.png "Project Content")
+![project-content](http://umaharano.github.io/my-test-repo/images/Lab1/project-content.png "Project Content")
 
 The Config.daml file will be opened (by default) in Visual Studio. The Module1.cs file contains your Add-in Module code. The code will be similar to this:
 
@@ -118,19 +118,19 @@ DAML elements can be inserted, updated, or deleted in any Config.daml. This incl
 
 * We will use a Visual Studio extension called ArcGIS Pro SDK for .NET (Utilities) for this step. Check if you have this installed by looking at the Extensions listed under Tools > Extensions and Updates in Visual Studio.  
 <br>
-![ext.png](../../../../../../wiki/images/Lab1/ext.png "ArcGIS Pro SDK for .NET (Utilities)")  
+![ext.png](http://umaharano.github.io/my-test-repo/images/Lab1/ext.png "ArcGIS Pro SDK for .NET (Utilities)")  
 <br>
 * Right click the project node in the Solution Explorer and select "Pro Generate DAML Ids" from the context menu.  Running the utility provides Intellisense support to your Config.daml file for auto-complete of the refID attribute  value of a DAML element.
 
 Note: If your Config.daml file was open in Visual Studio you will get the following prompt:
 
-![config-daml-warning](../../../../../../wiki/images/Lab1/config-daml-warning.png "Config.DAML Warning")
+![config-daml-warning](http://umaharano.github.io/my-test-repo/images/Lab1/config-daml-warning.png "Config.DAML Warning")
 
 * Click Yes or Yes To All.
 
 * Locate the group element for "working_with_DAML_Group1" in your config.daml. Type `<button refID=` inside the group element. Intellisense will now show up.  
 <br>
-![btnRef.png](../../../../../../wiki/images/Lab1/btnRef.png "Intellisense")
+![btnRef.png](http://umaharano.github.io/my-test-repo/images/Lab1/btnRef.png "Intellisense")
 <br>
 You can experiment with adding any of these references to your  group.  For the purpose of this exercise, we will assume that the following references are added to Lab 1 and Lab 2 groups but you can experiment with whichever references you like.
 
@@ -174,8 +174,8 @@ Your group1 may look similar to this (depending on which references you added):
 * Compile and Run the Add-In. ArcGIS Pro will start. Log in with your Organization ID when prompted. Create a new project using the default "Map.aptx" template. After the project has opened, observe your new Favorites tabs containing the Lab groups with the Core commands, tools, etc you referenced.
 
 <br>
-![fav.png](../../../../../../wiki/images/Lab1/fav.png "Favorites 1")  
-![fav.png](../../../../../../wiki/images/Lab1/fav2.png "Favorites 2")  
+![fav.png](http://umaharano.github.io/my-test-repo/images/Lab1/fav.png "Favorites 1")  
+![fav.png](http://umaharano.github.io/my-test-repo/images/Lab1/fav2.png "Favorites 2")  
 <br>
 
 * Stop debugging.
@@ -202,7 +202,7 @@ We will delete the core Bookmarks gallery from the Map tab's Navigate group.
 
 Before  | After
 ------------- | -------------
-![fav.png](../../../../../../wiki/images/Lab1/map.png "Before")  | ![fav.png](../../../../../../wiki/images/Lab1/modified-map.png "After")
+![fav.png](http://umaharano.github.io/my-test-repo/images/Lab1/map.png "Before")  | ![fav.png](http://umaharano.github.io/my-test-repo/images/Lab1/modified-map.png "After")
 
 ####Step 5: Create a custom condition and State.
 
@@ -314,9 +314,9 @@ Compile the Add-In and run the sample. You will notice that the "Respond to Stat
 
 Click the Toggle State button in the Navigate group of the Map tab.  This will enable the "Respond to State" button. Click the Toggle State button again and the Respond to State button will be disabled. You have declaratively tied the enabled/disabled state of the Respond to State button to your custom condition. Your custom condition is set **true** or **false** by activating and deactivating the custom state "example_state" respectively.
 
-![fav.png](../../../../../../wiki/images/Lab1/state-disabled.png "Example State is disabled")  
+![fav.png](https://github.com/UmaHarano/my-test-repo/wiki/images/Lab1/state-disabled.png "Example State is disabled")  
 
-![tab-groups.png](../../../../../../wiki/images/Lab1/state-enabled.png "Example State is enabled")  
+![tab-groups.png](https://github.com/UmaHarano/my-test-repo/images/Lab1/state-enabled.png "Example State is enabled")  
 
 ####Step 6: Use the custom condition and State to toggle visibility of a Tab Group (Bonus)
 
